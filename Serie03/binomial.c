@@ -12,7 +12,7 @@ int k;
 
 int binomial(int a, int b) {
 	int temp1, temp2;
-	if ((a == 0) || (a == b)) {
+	if ((b == 0) || (a == b)) {
 		return 1;
 	} else {
 		temp1 = binomial(a - 1, b);
