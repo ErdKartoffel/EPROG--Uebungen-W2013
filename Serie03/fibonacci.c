@@ -11,7 +11,6 @@
 
 int fibonacciRek(int n){
 
-	int temp = 0;
 	if(n==1){
 
 		return 1;
