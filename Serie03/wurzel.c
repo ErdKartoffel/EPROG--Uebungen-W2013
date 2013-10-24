@@ -11,7 +11,7 @@
 
 double first=0;
 double second = 0;
-
+double temp = 0;
 double _sqrt(double x, int t){
 
 
@@ -25,6 +25,8 @@ double _sqrt(double x, int t){
 
 
 
+		temp = second;		
+
 		second =  (first+x/first)/2.0;
 
 		if((fabs(first-second)/fabs(first))<=t || first<=t){
@@ -33,7 +35,7 @@ double _sqrt(double x, int t){
 
 		}
 
-		first = second;
+		first = temp;
 
 
 
